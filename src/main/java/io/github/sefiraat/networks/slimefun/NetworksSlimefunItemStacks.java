@@ -46,6 +46,8 @@ public class NetworksSlimefunItemStacks {
     public static final SlimefunItemStack NETWORK_EXPORT;
     public static final SlimefunItemStack NETWORK_GRABBER;
     public static final SlimefunItemStack NETWORK_PUSHER;
+    public static final SlimefunItemStack NETWORK_VANILLA_GRABBER;
+    public static final SlimefunItemStack NETWORK_VANILLA_PUSHER;
     public static final SlimefunItemStack NETWORK_PURGER;
     public static final SlimefunItemStack NETWORK_GRID;
     public static final SlimefunItemStack NETWORK_CRAFTING_GRID;
@@ -277,6 +279,30 @@ public class NetworksSlimefunItemStacks {
             "網路推送器將嘗試",
             "推送匹配的物品",
             "到所選的機器中."
+        );
+
+        NETWORK_VANILLA_GRABBER = Theme.themedSlimefunItemStack(
+            "NTW_VANILLA_GRABBER",
+            new ItemStack(Material.ORANGE_STAINED_GLASS),
+            Theme.MACHINE,
+            "網路原版抓取器",
+            "網路原版抓取器將會嘗試",
+            "從原版容器中抓取",
+            "第一個可抓取的物品.",
+            "你需要通過網路抓取器",
+            "來抓取這個節點的物品."
+        );
+
+        NETWORK_VANILLA_PUSHER = Theme.themedSlimefunItemStack(
+            "NTW_VANILLA_PUSHER",
+            new ItemStack(Material.LIME_STAINED_GLASS),
+            Theme.MACHINE,
+            "網路原版推送器",
+            "網路原版推送器將嘗試推送",
+            "任何在內的物品到",
+            "選擇的原版容器中.",
+            "你需要通過網路推送器",
+            "來推送物品到這個節點."
         );
 
         NETWORK_PURGER = Theme.themedSlimefunItemStack(
