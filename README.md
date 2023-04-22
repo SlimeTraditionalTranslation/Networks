@@ -16,9 +16,7 @@
 
 ## 關於網絡
 
-你可以在這裡 (官方英文版) [文檔頁面](https://sefiraat.gitbook.io/docs/) 找到網路的完整指南, 包括所有的物品與方塊.
-
-您可以在作者[文檔頁面](https://sefiraat.gitbook.io/docs/) 中找到更完整的網絡指南，包括所有項目和連接塊 
+你可以在這裡 (官方英文版) [文檔頁面](https://sefiraat.dev) 找到網路的完整指南, 包括所有的物品與方塊.
 
 ![](https://github.com/Sefiraat/Networks/blob/master/images/wiki/setup.png?raw=true) 
 

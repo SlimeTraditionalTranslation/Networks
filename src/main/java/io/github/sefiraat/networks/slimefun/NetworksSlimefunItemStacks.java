@@ -45,6 +45,9 @@ public class NetworksSlimefunItemStacks {
     public static final SlimefunItemStack NETWORK_EXPORT;
     public static final SlimefunItemStack NETWORK_GRABBER;
     public static final SlimefunItemStack NETWORK_PUSHER;
+    public static final SlimefunItemStack NETWORK_CONTROL_X;
+    public static final SlimefunItemStack NETWORK_CONTROL_V;
+    public static final SlimefunItemStack NETWORK_VACUUM;
     public static final SlimefunItemStack NETWORK_VANILLA_GRABBER;
     public static final SlimefunItemStack NETWORK_VANILLA_PUSHER;
     public static final SlimefunItemStack NETWORK_WIRELESS_TRANSMITTER;
@@ -275,6 +278,47 @@ public class NetworksSlimefunItemStacks {
             "到所選的機器中."
         );
 
+        NETWORK_CONTROL_X = Theme.themedSlimefunItemStack(
+            "NTW_CONTROL_X",
+            new ItemStack(Material.WHITE_GLAZED_TERRACOTTA),
+            Theme.MACHINE,
+            "網路控制器：X",
+            "網路控制器 X 將會",
+            "嘗試從世界上「剪下」方塊",
+            "並放入至網路之中。",
+            "只能運作於沒有儲存空間的",
+            "原版方塊。",
+            "",
+            MessageFormat.format("{0}網路流失: {1}{2}/每次剪下", Theme.CLICK_INFO, Theme.PASSIVE, 100)
+        );
+
+        NETWORK_CONTROL_V = Theme.themedSlimefunItemStack(
+            "NTW_CONTROL_V",
+            new ItemStack(Material.PURPLE_GLAZED_TERRACOTTA),
+            Theme.MACHINE,
+            "網路控制器：V",
+            "網路控制器 V 將會",
+            "嘗試從網路中「貼上」方塊",
+            "到世界上。",
+            "只能運作於原版方塊。",
+            "",
+            MessageFormat.format("{0}網路流失: {1}{2}/每次貼上", Theme.CLICK_INFO, Theme.PASSIVE, 100)
+        );
+
+        NETWORK_VACUUM = Theme.themedSlimefunItemStack(
+            "NTW_VACUUM",
+            new ItemStack(Material.ORANGE_GLAZED_TERRACOTTA),
+            Theme.MACHINE,
+            "網路真空器",
+            "網路真空器將會以",
+            "自己為中心吸取 4 x 4 範圍的",
+            "物品到內。",
+            "已吸入的物品將會嘗試推送",
+            "回網路之中。",
+            "",
+            MessageFormat.format("{0}網路流失: {1}{2}/tick", Theme.CLICK_INFO, Theme.PASSIVE, 100)
+        );
+
         NETWORK_VANILLA_GRABBER = Theme.themedSlimefunItemStack(
             "NTW_VANILLA_GRABBER",
             new ItemStack(Material.ORANGE_STAINED_GLASS),
@@ -310,7 +354,7 @@ public class NetworksSlimefunItemStacks {
             "世界的網路無線接收器.",
             "使用網路無線配置器",
             "來設定無線傳輸器.",
-            "每次傳輸需要 7500 網路能源."
+            "每次傳輸需要 500 網路能源."
         );
 
         NETWORK_WIRELESS_RECEIVER = Theme.themedSlimefunItemStack(
