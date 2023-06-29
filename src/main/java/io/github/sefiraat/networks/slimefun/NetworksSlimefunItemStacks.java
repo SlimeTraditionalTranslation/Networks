@@ -90,6 +90,7 @@ public class NetworksSlimefunItemStacks {
     public static final SlimefunItemStack NETWORK_RAKE_1;
     public static final SlimefunItemStack NETWORK_RAKE_2;
     public static final SlimefunItemStack NETWORK_RAKE_3;
+    public static final SlimefunItemStack NETWORK_DEBUG_STICK;
 
     static {
 
@@ -788,6 +789,15 @@ public class NetworksSlimefunItemStacks {
             "以立即破壞它.",
             "",
             ChatColor.YELLOW + "剩餘次數 " + ChatColor.GRAY + "9999次"
+        );
+
+        NETWORK_DEBUG_STICK = Theme.themedSlimefunItemStack(
+            "NTW_DEBUG_STICK",
+            getPreEnchantedItemStack(Material.STICK, true, new Pair<>(Enchantment.LUCK, 1)),
+            Theme.TOOL,
+            "網路除錯棒",
+            "對網路物件右鍵",
+            "來開啟除錯模式。"
         );
     }
 
